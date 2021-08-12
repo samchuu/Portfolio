@@ -25,6 +25,115 @@ body {
   color: white;
   font-size: 22px;
 }
+
+.show {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+  color: black;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  background: #1d4350; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #a43931,
+    #1d4350
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #a43931,
+    #1d4350
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  animation: 0.7s slideDown;
+}
+
+.hide {
+}
+
+@keyframes slideDown {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.close-nav-bar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 38px;
+  cursor: pointer;
+  transition: all 1.7s ease-out;
+}
+
+.close-nav-bar:hover {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.left-box {
+  grid-area: left;
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 10px;
+  /* height: 400px; */
+}
+.left-box-icon {
+  display: flex;
+}
+.left-box-icons {
+  width: 30px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.left-box-header {
+  margin-bottom: 10px;
+}
+.email,
+.phone {
+  margin-bottom: 15px;
+}
+.right-box {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  grid-area: right;
+  /* margin: 0 auto; */
+}
+
+#sam-circle {
+  width: 84px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.nav-text {
+  margin-bottom: 20px;
+  margin-right: 50px;
+  font-size: 38px;
+  cursor: pointer;
+}
+
+.nav-text:hover {
+  color: white;
+  transition: all 0.3s ease;
+}
+
 nav {
   display: none;
 }
@@ -32,26 +141,26 @@ nav {
   height: 100vh;
 }
 .logo {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   color: white;
-  display: flex;
-  position: fixed;
-  top: 25px;
-  left: 50px;
-  width: 100%;
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
+  position: fixed;
+  top: 20px;
+  left: 30px;
 }
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
 }
 .hamburger {
   position: fixed;
   top: 25px;
-  right: 0;
+  right: 35px;
+  cursor: pointer;
 }
 .hamburger span {
   display: block;
@@ -60,8 +169,7 @@ nav {
   height: 3px;
   background-color: white;
   position: relative;
-  right: 30px;
-  cursor: pointer;
+  right: 0px;
 }
 
 .header-content {
@@ -69,6 +177,17 @@ nav {
   max-width: 490px;
   margin: 18rem auto;
   text-align: center;
+  animation: 2.7s headerDelay;
+}
+@keyframes headerDelay {
+  from {
+    top: 0px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
 }
 
 .front-end {
@@ -84,8 +203,19 @@ nav {
   letter-spacing: 1.5px;
 }
 
-.thoughtful {
+.reality {
   color: #3e5f68;
+  animation: 3.7s realityDelay;
+}
+@keyframes realityDelay {
+  from {
+    top: 0px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
 }
 .contact {
   border: 2px solid white;
@@ -106,20 +236,17 @@ nav {
 
 /* about */
 .about {
-  width: 80%;
+  /* width: 80%; */
   max-width: 390px;
   margin: 0 auto;
   text-align: center;
 }
 .inner-box {
-  /* width: 330px; */
   margin: 0 auto;
 }
 .description {
   font-size: 16px;
-  /* color: #9ccad7; */
   color: #a3a3a5;
-
   margin-bottom: 20px;
   padding: 15px;
   line-height: 22px;
@@ -378,46 +505,51 @@ li {
   }
 }
 @media (min-width: 975px) {
-  /* nav bar */
-  .hamburger {
-    display: none;
+  .left-box {
+    align-items: flex-end;
+    padding: 10rem;
+    margin-top: 25px;
   }
 
-  #header {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 2rem;
+  .right-box {
+    align-items: flex-start;
+    padding: 10rem;
   }
-  nav {
-    display: block;
-  }
+
   .nav-text {
-    text-decoration: none;
-    color: white;
-    margin-right: 15px;
-    font-size: 18px;
+    font-size: 48px;
+    transition: all 0.3s ease;
   }
 
   /* about */
   .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     max-width: 1290px;
+
     grid-template-areas:
       "box about"
       "box tools";
   }
   .header-content {
-    margin: 10rem auto;
+    margin: 20rem auto;
   }
 
-  .box {
+  .image-box {
     grid-area: box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+
+    margin-bottom: 30px;
   }
   .icon-box {
     grid-area: about;
-    margin: 20px auto;
+    padding: 3rem;
+    /* margin-top: 50px; */
   }
 
   .skill-box {
@@ -429,26 +561,28 @@ li {
     text-align: start;
     margin-bottom: 15px;
   }
-  .top-line {
+  .about-line {
     border: 1px solid grey;
-
-    /* margin-bottom: 30px; */
+    margin: 20px 0;
   }
   .bottom-line {
     border: 1px solid grey;
-    margin-top: 30px;
+    width: 450px;
+    margin-top: 95px;
+
+    /* right: 650px;
+    bottom: 30px; */
   }
 
   .description {
     text-align: start;
-    width: 400px;
-
-    padding: 0px;
+    width: 360px;
+    padding: 0;
   }
 
   .tools {
     text-align: start;
-    margin-bottom: 20px;
+    margin: 30px 0;
   }
   #sam {
     width: 450px;

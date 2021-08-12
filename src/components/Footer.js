@@ -15,7 +15,12 @@ function Footer() {
 
       <div className="footer-lower-box">
         <div className="arrow-box">
-          <img id="arrow" src={arrow} alt="" />
+          <img
+            id="arrow"
+            src={arrow}
+            alt=""
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          />
         </div>
         <div className="footer-icon-box">
           <img className="footer-icons" src={twitter} alt="" />

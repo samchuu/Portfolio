@@ -1,24 +1,18 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {} from "@fortawesome/free-solid-svg-icons";
-import css from "../icons/css.png";
-import js from "../icons/js.png";
-import node from "../icons/node.png";
-import react from "../icons/react.png";
-import html from "../icons/html.png";
-import sass from "../icons/sass.png";
 import sam from "../icons/sam.jpeg";
 
 function About() {
   return (
     <div className="about">
-      <div className="box">
+      <div className="image-box">
         <img id="sam" src={sam} alt="" />
+        <div className="bottom-line"></div>
+        <div className="work-scroll"></div>
       </div>
 
       <div className="icon-box">
         <div className="inner-box">
-          {/* <div className="top-line"></div> */}
+          <div className="about-line"></div>
           <h3 className="about-me">About Me</h3>
           <p className="description">
             This is where you can describe about yourself. The more you describe
@@ -71,7 +65,6 @@ function About() {
             </li>
           </ul>
         </div>
-        {/* <div className="bottom-line"></div> */}
       </div>
     </div>
   );
