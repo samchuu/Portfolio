@@ -538,6 +538,9 @@ li {
     width: 45px;
   }
 }
+.tools {
+  margin-bottom: 30px;
+}
 @media (min-width: 975px) {
   .left-box {
     align-items: flex-end;
@@ -616,7 +619,7 @@ li {
 
   .tools {
     text-align: start;
-    margin: 30px 0;
+    margin: 40px 0;
   }
   #sam {
     width: 450px;
