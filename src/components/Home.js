@@ -3,9 +3,12 @@ import sam from "../icons/sam.jpeg";
 import facebook from "../icons/facebook.png";
 import instagram from "../icons/instagram.png";
 import linkedin from "../icons/linkedin.png";
-function Home() {
-  const [isHamburgerActive, setIsHamburgerActive] = useState(false);
-  const [isScrollActive, setIsScrollActive] = useState(false);
+function Home({
+  isRecentWorkScrolled,
+  setIsRecentWorkScrolled,
+  isHamburgerActive,
+  setIsHamburgerActive,
+}) {
   const hamburgerHandler = () => {
     setIsHamburgerActive(!isHamburgerActive);
   };
@@ -20,14 +23,13 @@ function Home() {
   const aboutHandler = () => {
     const aboutPage = document.querySelector(".about");
     setIsHamburgerActive(false);
-    setIsScrollActive(true);
+
     aboutPage.scrollIntoView({ behavior: "smooth" });
   };
   const workHandler = () => {
     const workPage = document.querySelector(".work-scroll");
     workPage.scrollIntoView({ behavior: "smooth" });
     setIsHamburgerActive(false);
-    setIsScrollActive(true);
   };
 
   // const contactHandler = () => {
@@ -41,14 +43,6 @@ function Home() {
     setIsHamburgerActive(false);
   };
 
-  //show hamburger when user is on top of the page
-  // window.addEventListener("scroll", function () {
-  //   if (window.scrollY == 0) {
-  //     setIsScrollActive(false);
-  //   } else {
-  //     setIsScrollActive(true);
-  //   }
-  // });
   return (
     <div className="home">
       <header>
@@ -61,7 +55,7 @@ function Home() {
               <img id="sam-circle" src={sam} alt="" />
               <h4 className="left-box-header">Contact Details</h4>
               <h6 className="email">samchupiano@gmail.com</h6>
-              <h6 class="phone">+34 658 634 235</h6>
+              <h6 className="phone">+34 658 634 235</h6>
               <div className="left-box-icon">
                 <img className="left-box-icons" src={facebook} alt="" />
                 <img className="left-box-icons" src={instagram} alt="" />

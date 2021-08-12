@@ -4,13 +4,19 @@ import github from "../icons/github.png";
 import linkedin from "../icons/linkedin.png";
 import twitter from "../icons/twitter.png";
 import netlify from "../icons/netlify.png";
-function Footer() {
+function Footer({ isHamburgerActive, setIsHamburgerActive }) {
+  const contactHandler = () => {
+    window.scrollTo({ top: 0 });
+    setIsHamburgerActive(true);
+  };
   return (
     <div>
       <div className="footer-upper-box">
         <h2 className="interested">Interested in doing a project together?</h2>
         <span className="contact-line"></span>
-        <button className="contact-footer">Contact Me</button>
+        <button onClick={contactHandler} className="contact-footer">
+          Contact Me
+        </button>
       </div>
 
       <div className="footer-lower-box">

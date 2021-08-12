@@ -1,5 +1,4 @@
-import React from "react";
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React, { useState } from "react";
 import "./styles.css";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -7,13 +6,27 @@ import Project from "./components/Project";
 import Footer from "./components/Footer";
 
 function App() {
+  const [isRecentWorkScrolled, setIsRecentWorkScrolled] = useState(false);
+  const [isHamburgerActive, setIsHamburgerActive] = useState(false);
+
   return (
     <div className="App">
       <div className="container">
-        <Home />
+        <Home
+          isRecentWorkScrolled={isRecentWorkScrolled}
+          setIsRecentWorkScrolled={setIsRecentWorkScrolled}
+          isHamburgerActive={isHamburgerActive}
+          setIsHamburgerActive={setIsHamburgerActive}
+        />
         <About />
-        <Project />
-        <Footer />
+        <Project
+          isRecentWorkScrolled={isRecentWorkScrolled}
+          setIsRecentWorkScrolled={setIsRecentWorkScrolled}
+        />
+        <Footer
+          isHamburgerActive={isHamburgerActive}
+          setIsHamburgerActive={setIsHamburgerActive}
+        />
       </div>
     </div>
   );

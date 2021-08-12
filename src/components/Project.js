@@ -3,9 +3,20 @@ import pomodoro from "../icons/Pomodoro.png";
 import calculator from "../icons/Calculator.png";
 import player from "../icons/Player.png";
 
-function Project() {
+function Project({ isRecentWorkScrolled, setIsRecentWorkScrolled }) {
+  window.addEventListener("scroll", function () {
+    const scrolled = window.scrollY;
+    console.log(scrolled);
+    if (scrolled < 990) {
+      setIsRecentWorkScrolled(false);
+    } else {
+      setIsRecentWorkScrolled(true);
+    }
+  });
   return (
-    <div className="project-container">
+    <div
+      className={isRecentWorkScrolled ? "project-container" : "hide-project"}
+    >
       <div className="project-inner-box">
         <h2 className="projects">Recent Works</h2>
 
