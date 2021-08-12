@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import sam from "../icons/sam.jpeg";
 import facebook from "../icons/facebook.png";
 import instagram from "../icons/instagram.png";
