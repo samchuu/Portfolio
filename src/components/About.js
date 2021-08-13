@@ -16,12 +16,12 @@ function About() {
             <div className="about-line"></div>
             <h3 className="about-me">About Me</h3>
             <p className="description">
-              This is where you can describe about yourself. The more you
-              describe about yourself, the more chances you can! Extra
-              Information about you, like hobbies and your goals. This is where
-              you can describe about yourself. The more you describe about
-              yourself, the more chances you can! Extra Information about you,
-              like hobbies and your goals.
+              I'm a junior front-end developer seeking for a new role in an
+              exciting company. I'm based in Barcelona, Spain and I'm also open
+              to working remotely. I'm a self-motivated and passionate person,
+              with great ability to quickly embrace and adapt to new ideas and
+              methods. Striving to make an impact one step at a time through
+              code.
             </p>
           </div>
 
@@ -61,8 +61,8 @@ function About() {
               </li>
               <li>
                 <span className="line"></span>
-                <span className="jest-percentage" id="jest"></span>
-                JEST UNIT TESTING
+                <span className="git-percentage" id="git"></span>
+                Git
               </li>
             </ul>
           </div>

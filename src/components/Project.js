@@ -14,52 +14,57 @@ function Project({ isRecentWorkScrolled, setIsRecentWorkScrolled }) {
     }
   });
   return (
-    <div
-      className={isRecentWorkScrolled ? "project-container" : "hide-project"}
-    >
-      <div className="project-inner-box">
-        <h2 className="projects">Recent Works</h2>
+    <div>
+      <h2 className="projects">Recent Works</h2>
 
-        <div className="project-box">
-          <div className="pomodoro-box">
-            <img className="pomodoro" src={pomodoro} alt="" />
-            <h4>Pomodoro Timer</h4>
-            <a href="https://pomodorofcc.netlify.app/" target="_blank">
-              <button className="live">See Live</button>
-            </a>
-            <a href="https://github.com/samchuu/Pomodoro--FCC" target="_blank">
-              <span className="source-code">Source Code</span>
-            </a>
-          </div>
-          <div className="calculator-box">
-            <img className="calculator" src={calculator} alt="" />
-            <h4>Calculator</h4>
-            <a href="https://calculatorfcc.netlify.app/" target="_blank">
-              <button className="live">See Live</button>
-            </a>
-            <a
-              href="https://github.com/samchuu/Calculcator--FCC"
-              target="_blank"
-            >
-              <span className="source-code">Source Code</span>
-            </a>
-          </div>
+      <div
+        className={isRecentWorkScrolled ? "project-container" : "hide-project"}
+      >
+        <div className="project-inner-box">
+          <div className="project-box">
+            <div className="pomodoro-box">
+              <img className="pomodoro" src={pomodoro} alt="" />
+              <h4>Pomodoro Timer</h4>
+              <a href="https://pomodorofcc.netlify.app/" target="_blank">
+                <button className="live">See Live</button>
+              </a>
+              <a
+                href="https://github.com/samchuu/Pomodoro--FCC"
+                target="_blank"
+              >
+                <span className="source-code">Source Code</span>
+              </a>
+            </div>
+            <div className="calculator-box">
+              <img className="calculator" src={calculator} alt="" />
+              <h4>Calculator</h4>
+              <a href="https://calculatorfcc.netlify.app/" target="_blank">
+                <button className="live">See Live</button>
+              </a>
+              <a
+                href="https://github.com/samchuu/Calculcator--FCC"
+                target="_blank"
+              >
+                <span className="source-code">Source Code</span>
+              </a>
+            </div>
 
-          <div className="player-box">
-            <img className="player" src={drum} alt="" />
-            <h4>Drum Machine</h4>
-            <a
-              href="https://theultimatedrummachine.netlify.app/"
-              target="_blank"
-            >
-              <button className="live">See Live</button>
-            </a>
-            <a
-              href="https://github.com/samchuu/Drum-Machine--FCC"
-              target="_blank"
-            >
-              <span className="source-code">Source Code</span>
-            </a>
+            <div className="drum-box">
+              <img className="drum" src={drum} alt="" />
+              <h4>Drum Machine</h4>
+              <a
+                href="https://theultimatedrummachine.netlify.app/"
+                target="_blank"
+              >
+                <button className="live">See Live</button>
+              </a>
+              <a
+                href="https://github.com/samchuu/Drum-Machine--FCC"
+                target="_blank"
+              >
+                <span className="source-code">Source Code</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -220,7 +220,7 @@ nav {
 }
 .contact {
   border: 2px solid white;
-  background-color: #1b323b;
+  background-color: #162c33;
   color: white;
   width: 140px;
   height: 45px;
@@ -229,6 +229,7 @@ nav {
   cursor: pointer;
   top: 70px;
 }
+
 .contact:hover {
   background-color: white;
   color: black;
@@ -293,12 +294,15 @@ nav {
   display: none;
 }
 .projects {
-  margin: 30px 0;
+  text-align: center;
+  position: relative;
+
+  top: 50px;
 }
 
 .pomodoro,
 .calculator,
-.player {
+.drum {
   width: 100%;
   cursor: pointer;
   border: none;
@@ -307,7 +311,7 @@ nav {
   box-shadow: 5px 5px 5px black;
 }
 
-.player:hover {
+.drum:hover {
   margin-right: 30px;
   box-shadow: 15px 15px 15px black;
 }
@@ -449,7 +453,7 @@ li {
 .react-percentage,
 .node-percentage,
 .sass-percentage,
-.jest-percentage {
+.git-percentage {
   background-color: darkorange;
   height: 4px;
   position: absolute;
@@ -484,8 +488,8 @@ li {
   animation: sass 1s ease-out;
   width: 45px;
 }
-#jest {
-  animation: jest 1s ease-out;
+#git {
+  animation: git 1s ease-out;
   width: 45px;
 }
 
@@ -538,7 +542,7 @@ li {
     width: 45px;
   }
 }
-@keyframes jest {
+@keyframes git {
   0% {
     width: 0;
   }
@@ -613,7 +617,7 @@ li {
   .bottom-line {
     border: 1px solid grey;
     width: 450px;
-    margin-top: 116px;
+    margin-top: 96px;
 
     /* right: 650px;
     bottom: 30px; */
@@ -638,7 +642,7 @@ li {
   .project-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "pomodoro calc player";
+    grid-template-areas: "pomodoro calc drum";
     display: flex;
     justify-content: space-evenly;
   }
@@ -656,8 +660,8 @@ li {
     grid-area: calc;
     margin-right: 50px;
   }
-  .player-box {
-    grid-area: player;
+  .drum-box {
+    grid-area: drum;
   }
 
   /* footer */
@@ -705,6 +709,7 @@ li {
     margin: 0 auto;
     cursor: pointer;
   }
+
   .footer-icon-box {
     width: 387px;
     margin: 0 auto;

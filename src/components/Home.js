@@ -3,6 +3,7 @@ import sam from "../icons/sam.jpeg";
 import facebook from "../icons/facebook.png";
 import instagram from "../icons/instagram.png";
 import linkedin from "../icons/linkedin.png";
+
 function Home({
   isRecentWorkScrolled,
   setIsRecentWorkScrolled,
@@ -27,7 +28,7 @@ function Home({
     aboutPage.scrollIntoView({ behavior: "smooth" });
   };
   const workHandler = () => {
-    const workPage = document.querySelector(".work-scroll");
+    const workPage = document.querySelector(".projects");
     workPage.scrollIntoView({ behavior: "smooth" });
     setIsHamburgerActive(false);
   };
@@ -100,7 +101,9 @@ function Home({
           turning ideas into
           <span className="reality"> reality</span>
         </h2>
-        <button className="contact">Contact</button>
+        <button onClick={workHandler} className="contact">
+          My Work
+        </button>
       </div>
     </div>
   );
