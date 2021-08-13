@@ -4,6 +4,8 @@ import github from "../icons/github.png";
 import linkedin from "../icons/linkedin.png";
 import twitter from "../icons/twitter.png";
 import netlify from "../icons/netlify.png";
+import facebook from "../icons/facebook.png";
+import instagram from "../icons/instagram.png";
 function Footer({ isHamburgerActive, setIsHamburgerActive }) {
   const contactHandler = () => {
     window.scrollTo({ top: 0 });
@@ -29,10 +31,18 @@ function Footer({ isHamburgerActive, setIsHamburgerActive }) {
           />
         </div>
         <div className="footer-icon-box">
-          <img className="footer-icons" src={twitter} alt="" />
-          <img className="footer-icons" src={netlify} alt="" />
-          <img className="footer-icons" src={linkedin} alt="" />
-          <img className="footer-icons" src={github} alt="" />
+          <a href="https://www.facebook.com/samchuuu/" target="_blank">
+            <img className="footer-icons" src={facebook} alt="" />
+          </a>
+          <a href="https://www.instagram.com/samchuu/" target="_blank">
+            <img className="footer-icons" src={instagram} alt="" />
+          </a>
+          <a href="https://www.linkedin.com/in/samchuu/" target="_blank">
+            <img className="footer-icons" src={linkedin} alt="" />
+          </a>
+          <a href="https://github.com/samchuu" target="_blank">
+            <img className="footer-icons" src={github} alt="" />
+          </a>
         </div>
       </div>
     </div>

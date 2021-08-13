@@ -57,14 +57,20 @@ function Home({
               <h6 className="email">samchupiano@gmail.com</h6>
               <h6 className="phone">+34 658 634 235</h6>
               <div className="left-box-icon">
-                <img className="left-box-icons" src={facebook} alt="" />
-                <img className="left-box-icons" src={instagram} alt="" />
-                <img className="left-box-icons" src={linkedin} alt="" />
+                <a href="https://www.facebook.com/samchuuu/" target="_blank">
+                  <img className="left-box-icons" src={facebook} alt="" />
+                </a>
+                <a href="https://www.instagram.com/samchuu/" target="_blank">
+                  <img className="left-box-icons" src={instagram} alt="" />
+                </a>
+                <a href="https://www.linkedin.com/in/samchuu/" target="_blank">
+                  <img className="left-box-icons" src={linkedin} alt="" />
+                </a>
               </div>
             </div>
             <div className="right-box">
               <div className="close-nav-bar" onClick={closeNavHandler}>
-                X
+                &times;
               </div>
               <div className="nav-text" href="/" onClick={homeHandler}>
                 Home

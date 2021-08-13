@@ -67,9 +67,9 @@ body {
   position: absolute;
   top: 20px;
   right: 30px;
-  font-size: 38px;
+  font-size: 50px;
   cursor: pointer;
-  transition: all 1.7s ease-out;
+  transition: all 0.6s ease-out;
 }
 
 .close-nav-bar:hover {
@@ -301,25 +301,23 @@ nav {
 .player {
   width: 100%;
   cursor: pointer;
-  border: 2px solid #182d35;
+  border: none;
   border-radius: 25px;
   transition: all 0.3s ease-out;
-}
-
-.player {
+  box-shadow: 5px 5px 5px black;
 }
 
 .player:hover {
   margin-right: 30px;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 15px 15px 15px black;
 }
 .pomodoro:hover {
   margin-right: 30px;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 15px 15px 15px black;
 }
 .calculator:hover {
   margin-right: 30px;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 15px 15px 15px black;
 }
 
 h4 {
@@ -347,6 +345,16 @@ h4 {
 .source-code {
   font-size: 15px;
   cursor: pointer;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.source-code:hover {
+  margin-left: 2px;
+  transition: all 0.3s ease;
 }
 
 /* footer */
@@ -605,7 +613,7 @@ li {
   .bottom-line {
     border: 1px solid grey;
     width: 450px;
-    margin-top: 95px;
+    margin-top: 116px;
 
     /* right: 650px;
     bottom: 30px; */
