@@ -2,8 +2,7 @@ import React from "react";
 import arrow from "../icons/arrow.png";
 import github from "../icons/github.png";
 import linkedin from "../icons/linkedin.png";
-import twitter from "../icons/twitter.png";
-import netlify from "../icons/netlify.png";
+
 import facebook from "../icons/facebook.png";
 import instagram from "../icons/instagram.png";
 function Footer({ isHamburgerActive, setIsHamburgerActive }) {
@@ -31,16 +30,28 @@ function Footer({ isHamburgerActive, setIsHamburgerActive }) {
           />
         </div>
         <div className="footer-icon-box">
-          <a href="https://www.facebook.com/samchuuu/" target="_blank">
+          <a
+            href="https://www.facebook.com/samchuuu/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img className="footer-icons" src={facebook} alt="" />
           </a>
-          <a href="https://www.instagram.com/samchuu/" target="_blank">
+          <a
+            href="https://www.instagram.com/samchuu/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img className="footer-icons" src={instagram} alt="" />
           </a>
-          <a href="https://www.linkedin.com/in/samchuu/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/samchuu/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img className="footer-icons" src={linkedin} alt="" />
           </a>
-          <a href="https://github.com/samchuu" target="_blank">
+          <a href="https://github.com/samchuu" target="_blank" rel="noreferrer">
             <img className="footer-icons" src={github} alt="" />
           </a>
         </div>

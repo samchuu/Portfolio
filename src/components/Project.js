@@ -1,7 +1,7 @@
 import React from "react";
 import pomodoro from "../icons/Pomodoro.png";
 import calculator from "../icons/Calculator.png";
-import player from "../icons/Player.png";
+
 import drum from "../icons/drum.png";
 function Project({ isRecentWorkScrolled, setIsRecentWorkScrolled }) {
   window.addEventListener("scroll", function () {
@@ -25,12 +25,17 @@ function Project({ isRecentWorkScrolled, setIsRecentWorkScrolled }) {
             <div className="pomodoro-box">
               <img className="pomodoro" src={pomodoro} alt="" />
               <h4>Pomodoro Timer</h4>
-              <a href="https://pomodorofcc.netlify.app/" target="_blank">
+              <a
+                href="https://pomodorofcc.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="live">See Live</button>
               </a>
               <a
                 href="https://github.com/samchuu/Pomodoro--FCC"
                 target="_blank"
+                rel="noreferrer"
               >
                 <span className="source-code">Source Code</span>
               </a>
@@ -38,12 +43,17 @@ function Project({ isRecentWorkScrolled, setIsRecentWorkScrolled }) {
             <div className="calculator-box">
               <img className="calculator" src={calculator} alt="" />
               <h4>Calculator</h4>
-              <a href="https://calculatorfcc.netlify.app/" target="_blank">
+              <a
+                href="https://calculatorfcc.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="live">See Live</button>
               </a>
               <a
                 href="https://github.com/samchuu/Calculcator--FCC"
                 target="_blank"
+                rel="noreferrer"
               >
                 <span className="source-code">Source Code</span>
               </a>
@@ -55,12 +65,14 @@ function Project({ isRecentWorkScrolled, setIsRecentWorkScrolled }) {
               <a
                 href="https://theultimatedrummachine.netlify.app/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <button className="live">See Live</button>
               </a>
               <a
                 href="https://github.com/samchuu/Drum-Machine--FCC"
                 target="_blank"
+                rel="noreferrer"
               >
                 <span className="source-code">Source Code</span>
               </a>
