@@ -95,9 +95,12 @@ function Home({
               <div className="nav-text" href="/" onClick={workHandler}>
                 Work
               </div>
-              <div className="nav-text" href="/">
-                Resume
-              </div>
+              <a
+                href="https://drive.google.com/file/d/1mky-lTU7AYP2Kz8rvO0y_gXWsmyE46dt/view?usp=sharing"
+                target="_blank"
+              >
+                <div className="nav-text">Resume</div>
+              </a>
             </div>
           </nav>
           <div className="hamburger" onClick={hamburgerHandler}>
