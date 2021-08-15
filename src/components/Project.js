@@ -1,8 +1,8 @@
 import React from "react";
-import pomodoro from "../icons/Pomodoro.png";
-import calculator from "../icons/Calculator.png";
-
+import pomodoro from "../icons/pomodoro.png";
+import calculator from "../icons/calculator.png";
 import drum from "../icons/drum.png";
+
 function Project({ isRecentWorkScrolled, setIsRecentWorkScrolled }) {
   window.addEventListener("scroll", function () {
     const scrolled = window.scrollY;

@@ -116,7 +116,7 @@ function Home({
           turning ideas into
           <span className="reality"> reality</span>
         </h2>
-        <button onClick={workHandler} className="contact">
+        <button onClick={workHandler} className="my-work">
           My Work
         </button>
       </div>

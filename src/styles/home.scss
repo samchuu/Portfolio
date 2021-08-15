@@ -1,0 +1,97 @@
+.home {
+  margin-top: 10px;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.hamburger {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  cursor: pointer;
+}
+.hamburger span {
+  display: block;
+  margin: 5px 0;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+  right: 0px;
+}
+
+.header-content {
+  width: 80%;
+  max-width: 490px;
+  margin: 18rem auto;
+  text-align: center;
+  animation: 2.7s headerDelay;
+}
+@keyframes headerDelay {
+  from {
+    top: 0px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.front-end {
+  font-size: 10px;
+  color: #a3a3a5;
+  letter-spacing: 2px;
+}
+
+.main-text {
+  position: relative;
+  top: 20px;
+  font-size: 48px;
+  letter-spacing: 1.5px;
+}
+
+.reality {
+  color: #3e5f68;
+  animation: 3.7s realityDelay;
+}
+@keyframes realityDelay {
+  from {
+    top: 0px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+.my-work {
+  border: 2px solid white;
+  background-color: #162c33;
+  color: white;
+  width: 140px;
+  height: 45px;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  top: 70px;
+}
+
+.my-work:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease;
+}

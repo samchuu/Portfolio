@@ -2,9 +2,9 @@ import React from "react";
 import arrow from "../icons/arrow.png";
 import github from "../icons/github.png";
 import linkedin from "../icons/linkedin.png";
-
 import facebook from "../icons/facebook.png";
 import instagram from "../icons/instagram.png";
+
 function Footer({ isHamburgerActive, setIsHamburgerActive }) {
   const contactHandler = () => {
     window.scrollTo({ top: 0 });

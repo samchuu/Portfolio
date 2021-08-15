@@ -1,0 +1,222 @@
+.about {
+  max-width: 390px;
+  margin: 0 auto;
+  text-align: center;
+}
+.inner-box {
+  margin: 0 auto;
+}
+.description {
+  font-size: 16px;
+  color: #a3a3a5;
+  margin-bottom: 20px;
+  padding: 15px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  text-align: start;
+}
+.icon {
+  width: 60px;
+  margin-top: 30px;
+}
+
+#sam {
+  width: 350px;
+  margin: 20px 0px;
+}
+
+.skill-box {
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.tools {
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+  text-align: start;
+  font-size: 16px;
+}
+
+li {
+  margin-bottom: 30px;
+  height: 35px;
+}
+
+.line {
+  background-color: beige;
+  height: 4px;
+  width: 348px;
+  position: absolute;
+  margin-top: 30px;
+}
+
+.html-percentage,
+.css-percentage,
+.js-percentage,
+.react-percentage,
+.node-percentage,
+.sass-percentage,
+.git-percentage {
+  background-color: darkorange;
+  height: 4px;
+  position: absolute;
+  margin-top: 30px;
+}
+
+#html {
+  animation: html 1s ease-out;
+  width: 330px;
+}
+
+#css {
+  animation: css 1s ease-out;
+  width: 255px;
+}
+
+#javascript {
+  animation: javascript 1s ease-out;
+  width: 155px;
+}
+
+#react {
+  animation: react 1s ease-out;
+  width: 105px;
+}
+
+#node {
+  animation: node 1s ease-out;
+  width: 45px;
+}
+
+#sass {
+  animation: sass 1s ease-out;
+  width: 45px;
+}
+#git {
+  animation: git 1s ease-out;
+  width: 45px;
+}
+
+@keyframes html {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 330px;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 255px;
+  }
+}
+@keyframes javascript {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 155px;
+  }
+}
+@keyframes react {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 105px;
+  }
+}
+@keyframes node {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 45px;
+  }
+}
+@keyframes sass {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 45px;
+  }
+}
+@keyframes git {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 45px;
+  }
+}
+
+@media (min-width: $layout-large) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1390px;
+    grid-template-areas:
+      "box about"
+      "box tools";
+  }
+
+  .header-content {
+    margin: 20rem auto;
+  }
+
+  .image-box {
+    grid-area: box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    margin-bottom: 30px;
+  }
+  .icon-box {
+    grid-area: about;
+    padding: 3rem;
+  }
+
+  .skill-box {
+    grid-area: tools;
+    width: 100%;
+    height: 490px;
+  }
+  .about-me {
+    text-align: start;
+    margin-bottom: 15px;
+  }
+  .about-line {
+    border: 1px solid grey;
+    margin: 20px 0;
+  }
+  .bottom-line {
+    border: 1px solid grey;
+    width: 450px;
+    margin-top: 96px;
+  }
+
+  .description {
+    text-align: start;
+    width: 360px;
+    padding: 0;
+  }
+
+  .tools {
+    text-align: start;
+    margin: 40px 0;
+  }
+  #sam {
+    width: 450px;
+    object-fit: cover;
+  }
+}
