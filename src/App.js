@@ -13,8 +13,6 @@ function App() {
     <div className="App">
       <div className="container">
         <Home
-          isRecentWorkScrolled={isRecentWorkScrolled}
-          setIsRecentWorkScrolled={setIsRecentWorkScrolled}
           isHamburgerActive={isHamburgerActive}
           setIsHamburgerActive={setIsHamburgerActive}
         />

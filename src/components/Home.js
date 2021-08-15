@@ -4,12 +4,7 @@ import facebook from "../icons/facebook.png";
 import instagram from "../icons/instagram.png";
 import linkedin from "../icons/linkedin.png";
 
-function Home({
-  isRecentWorkScrolled,
-  setIsRecentWorkScrolled,
-  isHamburgerActive,
-  setIsHamburgerActive,
-}) {
+function Home({ isHamburgerActive, setIsHamburgerActive }) {
   const hamburgerHandler = () => {
     setIsHamburgerActive(!isHamburgerActive);
   };
@@ -32,13 +27,6 @@ function Home({
     workPage.scrollIntoView({ behavior: "smooth" });
     setIsHamburgerActive(false);
   };
-
-  // const contactHandler = () => {
-  //   const contactPage = document.querySelector(".footer-icon-box");
-  //   contactPage.scrollIntoView({ behavior: "smooth" });
-  //   setIsHamburgerActive(false);
-  //   setIsScrollActive(true);
-  // };
 
   const closeNavHandler = () => {
     setIsHamburgerActive(false);
@@ -98,6 +86,7 @@ function Home({
               <a
                 href="https://drive.google.com/file/d/1mky-lTU7AYP2Kz8rvO0y_gXWsmyE46dt/view?usp=sharing"
                 target="_blank"
+                rel="noreferrer"
               >
                 <div className="nav-text">Resume</div>
               </a>
