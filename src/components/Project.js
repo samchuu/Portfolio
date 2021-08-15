@@ -1,7 +1,7 @@
 import React from "react";
-import calculator from "../icons/calculator.png";
+import calculator from "../icons/Calculator.png";
 import drum from "../icons/drum.png";
-import pomodoro from "../icons/pomodoro.png";
+import pomodoro from "../icons/Pomodoro.png";
 
 function Project({ isRecentWorkScrolled, setIsRecentWorkScrolled }) {
   window.addEventListener("scroll", function () {
