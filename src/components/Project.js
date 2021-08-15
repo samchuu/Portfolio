@@ -1,7 +1,7 @@
 import React from "react";
-import pomodoro from "../icons/pomodoro.png";
 import calculator from "../icons/calculator.png";
 import drum from "../icons/drum.png";
+import pomodoro from "../icons/pomodoro.png";
 
 function Project({ isRecentWorkScrolled, setIsRecentWorkScrolled }) {
   window.addEventListener("scroll", function () {
@@ -16,7 +16,6 @@ function Project({ isRecentWorkScrolled, setIsRecentWorkScrolled }) {
   return (
     <div>
       <h2 className="projects">Recent Works</h2>
-
       <div
         className={isRecentWorkScrolled ? "project-container" : "hide-project"}
       >
