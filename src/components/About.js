@@ -16,11 +16,12 @@ function About() {
             <div className="about-line"></div>
             <h3 className="about-me">About me</h3>
             <p className="description">
-              I'm a junior front-end developer seeking a new role in an exciting
-              company. I'm currently based in Barcelona, Spain and I'm open to
-              working remotely. I'm a self-motivated and passionate person, with
-              great ability to quickly embrace and adapt new ideas and methods,
-              striving to make an impact one step at a time through code.
+              I'm a self-taught junior front-end developer seeking a new role in
+              an exciting company. I'm currently based in Barcelona, Spain and
+              I'm open to working remotely. I'm a self-motivated and passionate
+              person, with great ability to quickly embrace and adapt new ideas
+              and methods, striving to make an impact one step at a time through
+              code.
             </p>
           </div>
 
