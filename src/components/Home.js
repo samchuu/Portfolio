@@ -3,7 +3,7 @@ import sam from "../icons/sam.jpeg";
 import facebook from "../icons/facebook.png";
 import instagram from "../icons/instagram.png";
 import linkedin from "../icons/linkedin.png";
-import logo from "../icons/logo.png";
+
 function Home({ isHamburgerActive, setIsHamburgerActive }) {
   const hamburgerHandler = () => {
     setIsHamburgerActive(!isHamburgerActive);
