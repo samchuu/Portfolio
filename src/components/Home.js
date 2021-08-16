@@ -3,7 +3,7 @@ import sam from "../icons/sam.jpeg";
 import facebook from "../icons/facebook.png";
 import instagram from "../icons/instagram.png";
 import linkedin from "../icons/linkedin.png";
-
+import logo from "../icons/logo.png";
 function Home({ isHamburgerActive, setIsHamburgerActive }) {
   const hamburgerHandler = () => {
     setIsHamburgerActive(!isHamburgerActive);
@@ -99,15 +99,17 @@ function Home({ isHamburgerActive, setIsHamburgerActive }) {
           </div>
         </div>
       </header>
-      <div className="header-content">
-        <p className="front-end">FRONT-END DEVELOPER</p>
-        <h2 className="main-text">
-          turning ideas into
-          <span className="reality"> reality</span>
-        </h2>
-        <button onClick={workHandler} className="my-work">
-          My Work
-        </button>
+      <div className="main-header">
+        <div className="header-content">
+          <p className="front-end">FRONT-END DEVELOPER</p>
+          <h2 className="main-text">
+            turning ideas into
+            <span className="reality"> reality</span>
+          </h2>
+          <button onClick={workHandler} className="my-work">
+            My Work
+          </button>
+        </div>
       </div>
     </div>
   );

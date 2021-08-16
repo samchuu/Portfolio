@@ -1,7 +1,12 @@
 $layout-large: 875px;
 $linear-gradient: linear-gradient(to top, #2c5364, #203a43, #0f2027);
 $font-family: "Lato", sans-serif;
+@font-face {
+  src: url(../fonts/silka-regular.ttf);
+  font-family: silka-regular;
+}
 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +15,7 @@ $font-family: "Lato", sans-serif;
 
 body {
   background: $linear-gradient;
-  font-family: $font-family;
+  font-family: "silka-regular";
   color: white;
   font-size: 22px;
 }

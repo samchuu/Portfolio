@@ -1,5 +1,8 @@
 $modal-linear-gradient: linear-gradient(to bottom, #093637, #44a08d);
-
+@font-face {
+  src: url(../fonts/silka-regular.ttf);
+  font-family: silka-regular;
+}
 .show {
   display: grid;
   grid-template-columns: 1fr 1fr;
