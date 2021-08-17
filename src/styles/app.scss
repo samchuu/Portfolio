@@ -1,12 +1,13 @@
-$layout-large: 875px;
-$linear-gradient: linear-gradient(to top, #2c5364, #203a43, #0f2027);
-$font-family: "Lato", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap");
 @font-face {
   src: url(../fonts/silka-regular.ttf);
   font-family: silka-regular;
 }
+//scss variables
+$layout-large: 875px;
+$linear-gradient: linear-gradient(to top, #2c5364, #203a43, #0f2027);
+$font-family: "Lato", sans-serif;
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap");
 * {
   margin: 0;
   padding: 0;
