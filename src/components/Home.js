@@ -84,7 +84,7 @@ function Home({ isHamburgerActive, setIsHamburgerActive }) {
                 Work
               </div>
               <a
-                href="https://drive.google.com/file/d/1mky-lTU7AYP2Kz8rvO0y_gXWsmyE46dt/view?usp=sharing"
+                href="https://drive.google.com/file/d/1DoKYxwRRhGgyHVOpBt8ym-ytp_E-xdhb/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
